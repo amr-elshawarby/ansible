@@ -1,0 +1,7 @@
+---
+- hosts: webservers  # Targeting the group of hosts named "webservers"
+  become: yes         # Using sudo for privilege escalation
+  roles:
+    - apache          # First role: "apache"
+    - ntp-ansible-role-centos-9
+

@@ -1,0 +1,7 @@
+[webservers]
+Webserver1 ansible_host=192.168.163.141  ansible_user=root ansible_password=123
+[webservers:vars]
+http_port=80/tcp
+html_page_src=/root/apache-project/index.html
+html_page_dest=/var/www/html/index.html
+
